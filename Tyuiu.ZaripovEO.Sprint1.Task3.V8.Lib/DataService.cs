@@ -12,7 +12,7 @@ namespace Tyuiu.ZaripovEO.Sprint1.Task3.V8.Lib
     {
         public double IncomeAmount(double startAmount, double percent, double timeDays)
         {
-            return Math.Round(((percent / 100) / 365 * timeDays * startAmount), 2);
+            return Math.Round(startAmount + (startAmount * percent / 100 * (timeDays / 365)), 2);
         }
     }
 }

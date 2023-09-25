@@ -30,20 +30,22 @@ namespace Tyuiu.ZaripovEO.Sprint1.Task3.V8
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
             Console.WriteLine("***************************************************************************");
-            double percent;
-            Console.WriteLine("Введите процентную ставку (% годовых)");
-            percent = Convert.ToDouble(Console.ReadLine());
-            double timeDays;
-            Console.WriteLine("Введите время хранения (дней)");
-            timeDays = Convert.ToDouble(Console.ReadLine());
             double startAmount;
             Console.WriteLine("Введите величина вклада (руб.)");
             startAmount = Convert.ToDouble(Console.ReadLine());
+            double timeDays;
+            Console.WriteLine("Введите время хранения (дней)");
+            timeDays = Convert.ToDouble(Console.ReadLine());
+            double percent;
+            Console.WriteLine("Введите процентную ставку (% годовых)");
+            percent = Convert.ToDouble(Console.ReadLine());
+
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
-
+            double x1 = ds.IncomeAmount(startAmount, percent, timeDays) + startAmount;
             Console.WriteLine("Величина дохода по вкладу = " + ds.IncomeAmount(startAmount, percent, timeDays));
+            Console.WriteLine("Сумма по окончании срока вклада = " + x1);
 
             Console.ReadKey();
         }

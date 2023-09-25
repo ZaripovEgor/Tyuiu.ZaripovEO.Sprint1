@@ -16,7 +16,7 @@ namespace Tyuiu.ZaripovEO.Sprint1.Task3.V8.Test
             double percent = 20.0;
             double timeDays = 30.0;
             var res = ds.IncomeAmount(startAmount, percent, timeDays);
-            Assert.AreEqual(41.10, res);
+            Assert.AreEqual(2541.10, res);
         }
     }
 }
